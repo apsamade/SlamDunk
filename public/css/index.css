@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Oswald:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+@font-face{
+    font-family: 'Academy';
+    src: url('../fonts/varsity_regular.ttf') format('TrueType');
+}
+@font-face {
+    font-family: 'Slam';
+    src: url('../fonts/SlamDunkInline/SlamDunkInline.otf') format('PostScript'),
+         url('../fonts/SlamDunkInline/SlamDunkInline.ttf') format('TrueType');
+
+}
+@font-face {
+    font-family: 'Academy Filled 3D';
+    src: url('../fonts/AcademyFilled3D.ttf') format('TrueType');
+}
+@font-face {
+    font-family: 'Atlanta College';
+    src: url('../fonts/AtlantaCollegeRegular-1Gva2.ttf') format('TrueType');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    z-index: 10;
+    padding: 0 20px;
+    width: 225px;
+
+    opacity: 0;
+    animation: apparition 0.75s 0.8s ease-out forwards;
+}
+div:not(.share){
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+aside a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 8px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 10px black;
+    width: 100%;
+}
+aside a:hover{
+    color: #ff3022;
+    text-shadow: none;
+    transition: 0.3s;
+}
+.share img{
+    width: 28px;
+}
+.share{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+main{
+    display: flex;
+}
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+header{
+    opacity: 0;
+    animation: apparition 0.75s 0.8s ease-out forwards;
+}

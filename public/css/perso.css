@@ -1,0 +1,172 @@
+body{
+    background-image: url(../img/background_sd_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+header h1{
+    margin: 50px 0 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #800800;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px black;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+}
+header h3{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #800800;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px black;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: apparition 0.4s 0.7s ease-out forwards;
+}
+header #section1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: apparition 0.4s 1s ease-out forwards;
+}
+header #section1 button{
+  border: none;
+  background-color: rgb(99, 99, 99);
+  color: white;
+  width: 350px;
+  height: 55px;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 50px 5px;
+  font-family: 'Oswald';
+  transition: 0.3s;
+}
+header #section1 button:hover{
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s;
+}
+header #section1 button:focus{
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s;
+}
+header #section1 button:active{
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  z-index: 10;
+  padding: 0 20px;
+  width: 225px;
+  max-height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  opacity: 0;
+  animation: apparition 0.75s 0.8s ease-out forwards;
+}
+div:not(.share){
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside a{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 8px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 0 0 10px black;
+  width: 100%;
+}
+aside a:hover{
+  color: #ff3022;
+  text-shadow: none;
+  transition: 0.3s;
+}
+.share img{
+  width: 28px;
+}
+.share{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation: ani2 .5s steps(22) forwards : c'est l'animation incroyable de jujutsukaisen le site
+ul.charaList li:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    background: url(../images/chara_bg.jpg) no-repeat center top / cover;
+    -webkit-mask: url("../images/btn_sprite.png");
+    mask: url("../images/btn_sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: ani2 .5s steps(22) forwards;
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+*/
